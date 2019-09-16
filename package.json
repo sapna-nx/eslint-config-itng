@@ -1,0 +1,38 @@
+{
+  "name": "eslint-config-itng",
+  "version": "0.0.1",
+  "description": "ITNG's ESlint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITNG/eslint-config-itng.git"
+  },
+  "author": "Ryan P Kilby <rpkilby@ncsu.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ITNG/eslint-config-itng/issues"
+  },
+  "homepage": "https://github.com/ITNG/eslint-config-itng#readme",
+  "dependencies": {
+    "eslint-config-airbnb": "^7.0.0"
+  },
+  "peerDependencies": {
+    "babel-eslint": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.0",
+    "eslint": "^2.7.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "./index.js"
+    ],
+    "rules": {
+      "quote-props": [2, "always"]
+    }
+  }
+}
